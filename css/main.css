@@ -1,0 +1,409 @@
+:root 
+{
+    --mainColor: #00112c;
+    --secondaryColor: #284169;
+    --footerColor: #0a1b3a;
+    --btnColor: rgb(255, 56, 56);
+    --mainTransition: 0.3s;
+}
+body 
+{
+    font-family: 'Montserrat', sans-serif;
+
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: var(--mainColor);
+    
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+/*********************************************** Nav Section ***************************************************/
+.nav 
+{
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+/*Change nav color when scrolling using javascript*/
+.window-scroll 
+{
+    background-color: rgb(178, 172, 255);
+}
+.menu-scroll
+{
+    color: var(--secondaryColor);
+}
+.nav li 
+{
+    padding: 18px 22px;
+}
+.nav a 
+{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+.nav .link 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.nav a:hover,
+.nav a:focus,
+.nav .nav-links .active
+{
+    color: #467696;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.nav .menu 
+{
+    position: relative;
+    background-color: transparent;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.nav .menu-list 
+{
+    
+    position: absolute;
+    bottom: -1;
+    right: 16px;
+    width: 250px;
+}
+.nav .menu-list li  
+{
+    background-color: var(--secondaryColor);
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+    animation: animateMenuList 0.5s linear forwards;
+    -webkit-animation: animateMenuList 0.2s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+    box-shadow: 0px 4px 12px 12px #00112c2d;
+}
+.nav .menu-list li:nth-child(2)
+{
+    animation-delay: 0.2s;
+} 
+.nav .menu-list li:nth-child(3)
+{
+    animation-delay: 0.4s;
+} 
+.nav .menu-list li:nth-child(4)
+{
+    animation-delay: 0.6s;
+} 
+@keyframes animateMenuList
+{
+    0% 
+    {
+        transform: rotateZ(-90deg);
+        -webkit-transform: rotateZ(-90deg);
+        -moz-transform: rotateZ(-90deg);
+        -ms-transform: rotateZ(-90deg);
+        -o-transform: rotateZ(-90deg);
+}
+    100%
+    {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+        opacity: 1;
+}
+}
+.nav .menu-list li a 
+{
+    color: white;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+/********************************************* Nav Section *****************************************************/
+/********************************************* Land Section ****************************************************/
+.land 
+{
+    
+    height: calc(100vh - 100px);
+}
+@media (max-width: 767px) {
+    .land 
+    {
+        height: 100vh;
+    } 
+}
+@media (max-width: 400px) 
+{
+    .land 
+    {
+        height: calc(100vh - 100px);
+    } 
+}
+.land .land-btn 
+{
+    width: fit-content;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+    background-color: var(--btnColor);
+    color: white;
+    
+}
+.land .land-btn:hover 
+{
+    background-color: rgba(255, 255, 255, 0.014);
+    color: var(--btnColor);
+}
+.land .land-image
+{
+    width: 100%;
+}
+@media (max-width: 767px)
+{
+    .land .land-image
+    {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/*************************************** Lnad Section **********************************************************/
+/*************************************** Categories Section ****************************************************/
+.cat 
+{
+    background-color: var(--secondaryColor);
+    height: 350px;
+    margin-bottom: 100px;
+}
+@media (max-width: 992px) 
+{
+    .cat 
+    {
+        height: auto;
+        margin-bottom: auto;
+    } 
+}
+.cat .cat-btn-div
+{
+    width: fit-content;
+}
+.cat .cat-btn-div a
+{
+    color: var(--mainColor);
+    background-color: white;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.cat .cat-btn-div:hover a 
+{
+    background-color: rgba(255, 255, 255, 0.014);
+}
+.cat .cat-content article
+{
+    
+    background-color: #021533ef;
+    border: 2px solid #0b1730;
+}
+.cat .cat-content article h6 
+{
+    letter-spacing: 0.5px;
+}
+.cat .cat-content .row
+{
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(30%, 1fr));
+    gap: 10px;
+
+}
+@media screen and (max-width: 576px) 
+{
+    .cat .cat-content .row
+    {
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(34%, 1fr));
+    gap: 10px;
+    }
+}
+
+/***************************************** Categories Section **************************************************/
+/***************************************** Our Populer Section *************************************************/
+
+.our-populer .card
+{
+    background-color: var(--secondaryColor);
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+    border: 1px solid #2841697a;
+}
+.our-populer .card:hover 
+{
+    background-color: transparent;
+}
+.our-populer .card-btn
+{
+    background-color: var(--btnColor);
+}
+.our-populer .card-btn:hover 
+{
+    background-color: #28416994;
+}
+/***************************************** Our Populer Section *************************************************/
+/******************************************** FAQ Section ******************************************************/
+.faq
+{
+    background-color: var(--mainColor);
+}
+.faq .quastion
+{
+    background-color: var(--secondaryColor);
+}
+.faq .faq-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( 400px , 1fr));
+    gap: 15px;
+}
+@media screen and (max-width: 442px) 
+{
+    .faq .faq-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax( 200px , 1fr));
+    gap: 15px;
+}
+}
+.faq .faq-content .quastion
+{
+    height: fit-content;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.faq .faq-content .quastion.open
+{
+    height: 100%;
+}
+.faq .faq-content .quastion p
+{
+    display: none;
+}
+.faq .faq-content .quastion.open p
+{
+    display: block;
+}
+/********************************************** FAQ Section ****************************************************/
+/******************************************* Testimonial Section ***********************************************/
+.testimonial
+{
+    background-color: var(--mainColor);
+}
+.testimonial .container
+{
+    height: 400px;
+}
+.testimonial .test-content .image
+{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 0.5rem solid #4583e79a;
+}
+.testimonial .test-content .image img
+{
+    width: 5rem;
+    height: 5rem;
+}
+.testimonial .test-content .info
+{   
+    position: relative;
+    background-color: var(--secondaryColor);
+    
+}
+.testimonial .test-content .info::after
+{
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-color: transparent transparent var(--secondaryColor) transparent;
+    border-style: solid solid solid solid;
+    border-width: 40px 40px 40px 40px;
+}
+/****************************************** Testimonial Section ************************************************/
+/******************************************** Footer Section ***************************************************/
+.footer
+{
+    background-color: var(--footerColor);
+}
+.footer .container .row ul li a
+{
+    color:  rgba(255, 255, 255, 0.493);
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.footer .container .row ul li a:hover
+{
+    color: #1c417c;
+}
+.footer .container .row .social a
+{
+    color: white;
+}
+.footer .social .row a:hover .fa-facebook-f
+{
+    color: #1877f2;
+}
+.footer .social .row a:hover .fa-twitter
+{
+    color: #1da1f2;
+}
+.footer .social .row a:hover .fa-instagram
+{
+    color: #f77737;
+}
+.footer .social .row a:hover .fa-linkedin-in
+{
+    color: #0077b5;
+}
+/*********************************************** Footer Section ************************************************/

@@ -1,0 +1,111 @@
+.contact
+{
+    background-color: var(--mainColor);
+    height: auto;
+}   
+.contact .contact-content
+{
+    background-color: #031a3b;
+    
+}
+@media (min-width: 992px)
+{
+    .contact .contact-content
+    {
+        background-color: #031a3b;
+        height: 350px;
+    } 
+    .contact
+    {
+        height: calc(100vh - 60px);
+    }
+}
+@media (max-width: 992px)
+{
+    .contact .contact-content
+    {
+        background-color: transparent;
+    } 
+}
+.contact .card
+{
+    background-color: #1a3b69;
+    border: 0px;
+    width: 320px;
+    height: 130%;
+    
+}
+.contact .card .image
+{
+    width: 50%;
+}
+.contact .card .image img
+{
+    width: 100%;
+    background-color: #1a3b69;
+}
+.contact .card p,
+.contact .card h6
+{
+    font-size: 13px;
+}
+.contact .col-card .card h4
+{
+    letter-spacing: 2px;
+}
+.contact .card .social span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--mainColor);
+    cursor: pointer;
+}
+.contact .contact-content .form input
+{
+    background-color: #041124;
+    border: 2px solid #031227;
+    font-size: 13px;
+    color: wheat;
+    padding: 8px;
+}
+.contact .contact-content .form input:focus
+{
+    outline: none;
+    border: 2px solid #1a3b69;
+} 
+textarea 
+{
+    background-color: #041124;
+    border: 2px solid #031227;
+    font-size: 13px;
+    color: wheat;
+    padding: 8px;
+    height: 130px;
+}
+textarea:focus
+{
+    outline: none;
+    border: 2px solid #1a3b69;
+}
+.contact .contact-content .form input[type='submit']
+{
+    background-color: var(--btnColor);
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+    margin-left: 1px;
+}
+.contact .contact-content .form input[type='submit']:hover
+{
+    background-color: rgb(255, 88, 88);
+}
